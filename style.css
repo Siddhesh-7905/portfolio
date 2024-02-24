@@ -1,0 +1,343 @@
+body {
+    background-image: linear-gradient(100deg, rgb(98, 20, 80), rgb(10, 56, 91), rgb(103, 74, 21));
+  
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: transparent;
+    width: 100vw;
+    aspect-ratio: 85/3;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: 10;
+    /* padding: 0.2vw; */
+    /* overflow: hidden; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.nav_content {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 3vw;
+  margin-right: 3vw;
+  /* padding-top: 1vw; */
+
+}
+
+.nav_content a{
+    color: rgb(67, 219, 67);
+    font-size: calc(1.7857vw);
+    font-weight:bolder;
+    text-decoration: none;
+}
+.nav_content li{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+svg{
+    height: 1.2vw;
+}
+.resume {
+    margin-left: 4vw;
+}
+
+.home {
+    border: 0.3vw solid rgb(124, 181, 230);
+    width: 100vw;
+    aspect-ratio: 9/3.955;
+    transform: translateY(7vh);
+    display: flex;
+}
+
+.image {
+    width: 40vw;
+    margin-left:5%;
+    animation-name: imagee;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+.coderboy{
+    position: relative;
+   bottom: 0px;
+    filter: drop-shadow(0.5vw -0.5vh 1vh black) grayscale(0.3);
+
+}
+@keyframes imagee {
+    from {
+        transform: translateY(-17vh);
+        opacity: 0.3;
+    }
+
+    to {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.content {
+    width: 50vw;
+    font-size: 2vw;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    animation: contentt 2.5s;
+}
+@keyframes contentt{
+    from{
+        transform: translateX(50%);
+        opacity: 0.3;
+    }
+    to{ 
+    }
+}
+
+.content span {
+    color: rgb(160, 9, 9);
+    -webkit-text-stroke: 0.06vw rgb(12, 19, 12);
+    text-shadow: 0.04vw -0.02vh 0.5vh rgb(241, 12, 12);
+}
+
+.content h3 {
+    border-right: 0.2vw solid rgb(43, 219, 27);
+    width: 90%;
+    margin-left: 6.4%;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    animation:
+        typing 8s steps(39),
+        cursor .4s step-end infinite alternate;
+    animation-delay: 2.6s;
+    animation-iteration-count: infinite;
+      
+}
+
+@keyframes cursor {
+    50% {
+        border-color: #055505;
+    }
+}
+
+@keyframes typing {
+    from {
+        border-color: green;
+        width: 0;
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.about {
+    transform: translateY(7vh);
+    width: 100vw;
+    aspect-ratio: 9/3.955;
+    border: 0.3vw solid  rgb(124, 181, 230);
+ 
+}
+.About1{
+    text-align: center; 
+    font-size: 3vw;
+     color: #adff2f;
+     margin-top: 6vh; 
+}
+.About2{
+     display: grid;
+    gap: 0vw;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    overflow: scroll;
+}
+.about_skills li{
+    height: 5vh;
+}
+.aboutme {
+    margin: 7vw 4vw 7vw 4vw;
+    width: 25vw;
+    aspect-ratio: 2.3/3;
+    box-shadow: 0 0 1vw 0.5vw rgb(35, 26, 26);
+    transition: 0.8s;
+    border-radius: 3vw;
+    overflow: scroll;
+}
+
+.aboutme:hover {
+    box-shadow: 0.4vw 0.6vh 1vw 0.4vw rgb(21, 17, 17);
+    transform: scale(1.27);
+    border-radius: 4vw;
+}
+.heading{
+    font-size:3vw;
+    color: rgb(85, 131, 16);
+    font-weight: 600;
+}
+hr{
+    height: 0.1vw;
+}
+.data{
+    font-size: 1.6vw;
+}
+#project {
+    transform: translateY(7vh);
+    width: 100vw;
+    aspect-ratio: 9/3.955;
+    border: 0.3vw solid  rgb(124, 181, 230);
+}
+.my_project{
+    font-size: 3vw;
+    color: #adff2f;
+    margin-top: 3vw; 
+    text-align: center;
+    
+}
+.project{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    width: 100vw;
+    aspect-ratio: 2/1;
+}
+.project1 {
+    margin: 5vw 5vw 10vw 10vw;
+    width: 30vw;
+    aspect-ratio:1/1;
+    box-shadow: 0 0 1vw 0.5vw rgb(35, 26, 26);
+    transition: 0.8s;
+    border-radius: 7vw ;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    
+}
+.project1 img{
+   height: 70%;
+   width: 100%;
+   filter: grayscale(0.5);
+   transition: 1s;
+}
+.project1 div{
+    margin: 1.5vw 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: #7cba25;
+}
+.project1 button{
+    background-color: transparent;
+    border:0.2vw solid green;
+    padding: 0.2vw;
+    margin: 0 3.5vh;
+    color: yellow;
+    font-size: 1.6vw;
+}
+.project1 a{
+    text-decoration: none;
+    color: yellow;
+}
+.project1:hover {
+    box-shadow: 0.4vw 0.6vh 1vw 0.4vw rgb(21, 17, 17);
+    transform: scale(1.25);
+    border-radius: 7vw;
+
+}
+.project1:hover img{
+     filter: grayscale(0);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.contact { 
+    width: 100vw;
+    background-color: black;
+    aspect-ratio: 18/4;
+    transform: translateY(7vh);
+    color: white;
+    padding-left: 9vw;
+    font-size: 2.745vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 8.894vh;
+}
+
+.contact form {
+    margin-left: 9vw;
+    margin-bottom: 2vw;
+}
+.contact svg{
+    height: 1.6vw;
+}
+.contact form input {
+    background-color: transparent;
+    border: 0.005vw solid rgb(115, 115, 115);
+    width:24vw;
+    color: #fff;
+    height: 2.75vw;
+    font-size: 1.4vh;
+
+}
+.contact div p{
+    font-size: 2.2vw;
+}
+.contact div h3{
+    font-size: 2.2vw;
+}
+.contact div h1{
+    font-size: 3.5vw;
+}
+form textarea {
+    width: 24vw;
+    aspect-ratio: 2/1;
+    background-color: transparent;
+    border: 0.01vh solid rgb(115, 115, 115);
+    color: #fff;
+}
+
+form button {
+    width: 6vw;
+    padding: 0.586vh 0.3vw;
+    background-color: rgb(8, 86, 8);
+    border: none;
+    color: black;
+    font-size: 2vw;
+    margin-left: 9vw;
+}
+
+form button:hover {
+    background-color: green;
+    border-radius: 2vh;
+    box-shadow: 0px 0px 20vh 0.6vh greenyellow;
+}
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10vw;
+    font-size:3vh ;
+    transform: translateY(7vh);
+    width: 100vw;
+    aspect-ratio: 100/3;
+    color: green;
+    text-align: center;
+    padding: 1vh 0;
+    background-color: rgb(0, 0, 0);
+    border-top: 0.2vw solid  rgb(124, 181, 230);
+}
+.links a{
+
+    margin: 0 1.2vw;
+}
+footer h3{
+    font-size: 2vw;
+}
